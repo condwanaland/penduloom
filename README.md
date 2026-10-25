@@ -18,6 +18,6 @@ Then run the app with
 run_penduloom()
 ```
 
-The code for calculating the simulation is all implemented inside R. Because implementing it in R would require a round trip to the backend for every single frame, plus the (slow) R code. To get around this, `penduloom` calculates 10 seconds of the simulation at a time and sends it to the browser in a batch. The browser just interpolates and draws those frames. While it is running, another batch is calculated and sent, so it will continuosuly keep drawing smoothly. 
+The code for calculating the simulation is all implemented inside R. Because implementing it in R would require a round trip to the backend for every single frame, plus the (slow) R code, `penduloom` calculates 10 seconds of the simulation at a time and sends it to the browser in a batch. The browser just interpolates and draws those frames. While it is running, another batch is calculated and sent, so it will continuosuly keep drawing smoothly. 
 
 ![](man/figures/gif2.gif)
