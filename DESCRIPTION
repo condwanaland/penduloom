@@ -1,0 +1,20 @@
+Package: penduloom
+Title: Interactive Kinematic Pendulum Simulations
+Version: 0.1.0
+Authors@R: person("Conor", "Neilson", email = "hello@conorneilson.com", role = c("aut", "cre"))
+Author: Penduloom Team [aut, cre]
+Maintainer: Penduloom Team <hello@example.com>
+Description: A Shiny application for exploring chained pendulums with
+    configurable joint counts, arm lengths, and angular velocities. R calculates rolling trajectory batches while the browser
+    interpolates and renders them for smooth motion.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    bslib,
+    htmltools,
+    shiny
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
